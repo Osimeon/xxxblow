@@ -18,25 +18,9 @@
             android:layout_width="300dip"
             android:layout_height="50dip"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="21dp"
-            android:src="@drawable/alcoblow_home_page" />
-
-        <ImageView
-            android:id="@+id/imgLoginWithFb"
-            android:layout_width="200dip"
-            android:layout_height="50dip"
-            android:layout_below="@+id/imgLoginWithTwitter"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/login_with_fb" />
-
-        <ImageView
-            android:id="@+id/imgLoginWithTwitter"
-            android:layout_width="200dip"
-            android:layout_height="50dip"
-            android:layout_alignLeft="@+id/imgLoginWithFb"
-            android:layout_below="@+id/lblLogin"
-            android:layout_marginTop="14dp"
-            android:src="@drawable/login_with_twitter" />
+            android:layout_marginTop="60dip"
+            android:src="@drawable/alcoblow_home_page"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:id="@+id/lblLogin"
@@ -49,56 +33,33 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#C0C0C0" />
 
-        <TextView
-            android:id="@+id/lblOr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imgLoginWithFb"
-            android:layout_centerHorizontal="true"
-            android:text="or"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#C0C0C0" />
-
         <RelativeLayout
             android:id="@+id/relativeLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/imgLogoPage"
-            android:layout_below="@+id/lblOr"
+            android:layout_below="@+id/imgLoginWithFb"
             android:layout_marginTop="17dp"
             android:orientation="vertical" >
-
-            <EditText
-                android:id="@+id/txtUserName"
-                android:layout_width="200dip"
-                android:layout_height="40dip"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/top_box"
-                android:hint="Username"
-                android:inputType="text"
-                android:padding="10dip" />
-
-            <EditText
-                android:id="@+id/txtPassword"
-                android:layout_width="200dip"
-                android:layout_height="40dip"
-                android:layout_below="@+id/txtUserName"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/bottom_box"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:padding="10dip" />
         </RelativeLayout>
 
-        <TextView
-            android:id="@+id/lblTextBelow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/relativeLayout1"
+        <ImageView
+            android:id="@+id/imgLoginWithFb"
+            android:layout_width="250dip"
+            android:layout_height="50dip"
+            android:layout_below="@+id/imgLoginWithTwitter"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="17dp"
-            android:text="Don&apos;t You Have An Account? Click here"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:layout_marginTop="21dp"
+            android:src="@drawable/login_with_fb" />
+
+        <ImageView
+            android:id="@+id/imgLoginWithTwitter"
+            android:layout_width="250dip"
+            android:layout_height="50dip"
+            android:layout_alignLeft="@+id/imgLoginWithFb"
+            android:layout_below="@+id/lblLogin"
+            android:layout_marginTop="49dp"
+            android:src="@drawable/login_with_twitter" />
 
     </RelativeLayout>
 

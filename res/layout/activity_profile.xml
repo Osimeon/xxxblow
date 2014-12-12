@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription,HardcodedText"
+    android:background="#E7E7E7" >
+
+    <TextView
+        android:id="@+id/lblUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgUserProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Kevin Kamau"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#AF852D" />
+    
+    <com.facebook.widget.ProfilePictureView
+        android:id="@+id/imgUserProfile"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/no_image" />
+
+    <Button
+        android:id="@+id/btnSpot"
+        android:layout_width="250dip"
+        android:layout_height="45dip"
+        android:layout_below="@+id/lblUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Spot"
+        android:textColor="#4c5759"
+        android:background="@drawable/button_style" />
+
+    <Button
+        android:id="@+id/btnHotspots"
+        android:layout_width="250dip"
+        android:layout_height="45dip"
+        android:layout_below="@+id/btnSpot"
+		android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Hotspots"
+        android:textColor="#4c5759"
+        android:background="@drawable/button_style" />
+
+</RelativeLayout>

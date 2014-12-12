@@ -1,7 +1,10 @@
 package com.jesi.apps.alcoblow;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.facebook.Request;
@@ -15,6 +18,8 @@ public class ProfileActivity extends Activity{
 	Session session = Session.getActiveSession();
 	ProfilePictureView profile;
 	TextView username;
+	
+	Button spot;
 	
 	@Override
 	protected void onCreate(Bundle savedInstance){
@@ -42,5 +47,14 @@ public class ProfileActivity extends Activity{
 		    }
 		});
 		request.executeAsync();
+		
+		spot = (Button) findViewById(R.id.btnSpot);
+		
+		spot.setOnClickListener(new View.OnClickListener(){      
+			public void onClick(View view){
+				Intent i = new Intent(ProfileActivity.this, SpotMapActivity.class);
+				startActivity(i);
+			}
+		});
 	}
 }

@@ -5,4 +5,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="facebook_app_id">811446238897113</string>
+    
+    <!-- Twitter Configurations -->
+    <string name="twitter_callback">http://www.alcoblow.co.ke</string>
+    <string name="twitter_consumer_key">gePrFUbKXjQYh461Doo2Za6LA</string>
+    <string name="twitter_consumer_secret">XVD3UJ40BrnL5Yv7DVqEx9WxRLHUOspKO6WnBmMHtjkGVfLEan</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <!-- End Configurations -->
 </resources>
